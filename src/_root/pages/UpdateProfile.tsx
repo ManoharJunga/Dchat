@@ -1,3 +1,4 @@
+// Import necessary libraries and components...
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -13,17 +14,14 @@ import {
 } from "@/components/ui/form";
 import { useToast } from "@/components/ui/use-toast";
 
-
-
 import { useUserContext } from "@/context/AuthContext";
 import { useGetUserById, useUpdateUser } from "@/lib/react-query/queriesAndMutations";
 import Loader from "@/components/shared/Loader";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { ProfileValidation } from "@/lib/validation";
 import ProfileUploader from "@/components/shared/ProfileUploader";
-
+import { ProfileValidation } from "@/lib/validation";
 
 const UpdateProfile = () => {
   const { toast } = useToast();
@@ -43,8 +41,8 @@ const UpdateProfile = () => {
 
   // Queries
   const { data: currentUser } = useGetUserById(id || "");
-  const { mutateAsync: updateUser, isLoading: isLoadingUpdate } =
-    useUpdateUser();
+  const { mutateAsync: updateUser } = useUpdateUser();
+  const isLoadingUpdate = updateUser.isLoading;
 
   if (!currentUser)
     return (
@@ -76,6 +74,7 @@ const UpdateProfile = () => {
       bio: updatedUser?.bio,
       imageUrl: updatedUser?.imageUrl,
     });
+
     return navigate(`/profile/${id}`);
   };
 
