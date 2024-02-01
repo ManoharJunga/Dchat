@@ -32,3 +32,5 @@ export default {
 
 "Welcome to our Dchat app! Our platform provides users with the ability to create accounts, share captivating images, and engage with a dynamic community. Users can effortlessly set up their profiles, showcasing their unique personalities through bio descriptions and profile pictures. Seamlessly navigate through an intuitive interface to explore posts from other users, fostering connections and discovering new content. The app is designed to deliver a user-friendly experience, enabling easy account management, image uploads, and profile edits. Join our vibrant community, where creativity knows no bounds, and every image tells a story. Dive into the world of visual storytelling and make your mark on our growing platform!"
 https://github.com/ManoharJunga/Dchat/blob/main/Screenshots/Screenshot%202024-02-01%20at%204.39.09%E2%80%AFPM.png?raw=true
+
+<img src="Screenshots/Screenshot 2024-02-01 at 4.39.09 PM.png" width="1200px"/>
