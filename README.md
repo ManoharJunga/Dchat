@@ -30,4 +30,4 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 # Dchat
 
-
+"Welcome to our Dchat app! Our platform provides users with the ability to create accounts, share captivating images, and engage with a dynamic community. Users can effortlessly set up their profiles, showcasing their unique personalities through bio descriptions and profile pictures. Seamlessly navigate through an intuitive interface to explore posts from other users, fostering connections and discovering new content. The app is designed to deliver a user-friendly experience, enabling easy account management, image uploads, and profile edits. Join our vibrant community, where creativity knows no bounds, and every image tells a story. Dive into the world of visual storytelling and make your mark on our growing platform!"
